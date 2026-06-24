@@ -1,0 +1,12 @@
+body {
+  width: 256px;
+  height: 128px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

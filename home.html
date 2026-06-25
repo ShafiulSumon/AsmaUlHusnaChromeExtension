@@ -7,12 +7,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h2 id="nameField">99 Names of Allah</h2>
-      <h3 id="meaningField"></h3>
-    </div>
+    <header class="topbar">
+      <div>
+        <p id="modeLabel" class="eyebrow">Learn</p>
+        <p id="progressLabel" class="progress-text">0 of 99 memorized</p>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <span id="progressFill"></span>
+      </div>
+    </header>
 
-    <button id="getNameButton">Get Name</button>
+    <main class="container">
+      <p id="positionField" class="position-text">Name 1 of 99</p>
+      <h1 id="arabicNameField" lang="ar" dir="rtl">أسماء الله الحسنى</h1>
+      <h2 id="nameField">Asma Ul Husna</h2>
+      <h3 id="meaningField">99 Names of Allah</h3>
+    </main>
+
+    <footer class="footer">
+      <div class="mode-actions" role="group" aria-label="Study mode">
+        <button id="learnModeButton" class="mode-btn active" type="button">
+          Learn New
+        </button>
+        <button id="reviseModeButton" class="mode-btn" type="button">
+          Revise
+        </button>
+      </div>
+
+      <div class="study-actions learn-mode">
+        <button id="previousButton" class="nav-btn" type="button" hidden>Prev</button>
+        <button id="listenButton" class="btn" type="button" aria-label="Listen to name" disabled>
+          <img src="assets/images/volume.png" alt="" class="btn-icon" />
+        </button>
+        <button id="rememberButton" class="primary-btn" type="button">
+          Remembered
+        </button>
+        <button id="nextButton" class="nav-btn" type="button" hidden>Next</button>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
